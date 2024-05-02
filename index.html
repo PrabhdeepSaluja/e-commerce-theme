@@ -683,85 +683,340 @@
   <section class="category-carousel full-width_padding">
     <h2 class="section-title text-uppercase text-center mb-1 mb-md-3 pb-xl-2 mb-xl-4">Trending Items</h2>
 
-    <div class="container-fluid">
-        <div class="position-relative">
-            <div class="swiper-container js-swiper-slider"
-              data-settings='{
-                "autoplay": {
-                  "delay": 5000
-                },
-                "slidesPerView": 6,
-                "slidesPerGroup": 6,
-                "effect": "none",
-                "loop": true,
-                "pagination": false,
-                "navigation": false,
-                "breakpoints": {
-                  "320": {
-                    "slidesPerView": 2,
-                    "slidesPerGroup": 2,
-                    "spaceBetween": 14
-                  },
-                  "768": {
-                    "slidesPerView": 3,
-                    "slidesPerGroup": 3,
-                    "spaceBetween": 24
-                  },
-                  "992": {
-                    "slidesPerView": 4,
-                    "slidesPerGroup": 1,
-                    "spaceBetween": 30,
-                    "pagination": false
-                  },
-                  "1200": {
-                    "slidesPerView": 6,
-                    "slidesPerGroup": 1,
-                    "spaceBetween": 30,
-                    "pagination": false
-                  }
-                }
-              }'>
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img loading="lazy" class="w-100 h-auto mb-3" src="assets/img/products/product-1.jpg" width="270" height="182" alt="">
-                  <div class="text-center border-top py-4">
-                    <a href="shop1.html" class="menu-link menu-link_us-s text-uppercase fw-semi-bold">Women's Shirts</a>
+    <section class="products-carousel container">
+      <h2 class="section-title fw-normal fs-30 text-center mb-2">Best Selling</h2>
+      <p class="fs-13 mb-3 pb-2 text-secondary text-center">The World's Premium Brands In One Destination.</p>
+
+      <div id="product_5" class="position-relative">
+        <div class="swiper-container js-swiper-slider"
+          data-settings='{
+            "autoplay": {
+              "delay": 5000
+            },
+            "slidesPerView": 4,
+            "slidesPerGroup": 4,
+            "effect": "none",
+            "loop": false,
+            "pagination": false,
+            "navigation": {
+              "nextEl": "#product_5 .products-carousel__next",
+              "prevEl": "#product_5 .products-carousel__prev"
+            },
+            "breakpoints": {
+              "320": {
+                "slidesPerView": 2,
+                "slidesPerGroup": 2,
+                "spaceBetween": 14
+              },
+              "768": {
+                "slidesPerView": 3,
+                "slidesPerGroup": 3,
+                "spaceBetween": 24
+              },
+              "992": {
+                "slidesPerView": 4,
+                "slidesPerGroup": 1,
+                "spaceBetween": 30,
+                "pagination": false
+              }
+            }
+          }'>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide product-card hover-overlay">
+              <div class="pc__img-wrapper border-1 pt-100per">
+                <a href="product1_simple.html">
+                  <img loading="lazy" src="assets/img/products/prod-1-1.jpg" width="330" height="330" alt="" class="pc__img">
+                </a>
+                <div class="anim_appear-center position-absolute w-100 text-center mb-3">
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-add-cart js-open-aside" data-aside="cartDrawer" title="Add To Cart">
+                    <svg class="d-inline-block" width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_cart" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-quick-view" data-bs-toggle="modal" data-bs-target="#quickView" title="Quick view">
+                    <svg class="d-inline-block" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><use href="#icon_view" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 js-add-wishlist" title="Add To Wishlist">
+                    <svg width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_heart" /></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="pc__info position-relative">
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="pc__category">Jewelry</p>
+                  <div class="reviews-group d-flex theme-color">
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <img loading="lazy" class="w-100 h-auto mb-3" src="assets/img/products/product-2.jpg" width="270" height="182" alt="">
-                  <div class="text-center border-top py-4">
-                    <a href="shop1.html" class="menu-link menu-link_us-s text-uppercase fw-semi-bold">Men jackets</a>
+                <h6 class="pc__title mb-2"><a href="product1_simple.html">Sea Shell Sterling Silver</a></h6>
+                <div class="product-card__price d-flex">
+                  <span class="money price theme-color fw-bold font-heading">$29</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide product-card hover-overlay">
+              <div class="pc__img-wrapper border-1 pt-100per">
+                <a href="product1_simple.html">
+                  <img loading="lazy" src="assets/img/products/prod-16-4.jpg" width="330" height="330" alt="" class="pc__img">
+                </a>
+                <div class="anim_appear-center position-absolute w-100 text-center mb-3">
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-add-cart js-open-aside" data-aside="cartDrawer" title="Add To Cart">
+                    <svg class="d-inline-block" width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_cart" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-quick-view" data-bs-toggle="modal" data-bs-target="#quickView" title="Quick view">
+                    <svg class="d-inline-block" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><use href="#icon_view" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 js-add-wishlist" title="Add To Wishlist">
+                    <svg width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_heart" /></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="pc__info position-relative">
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="pc__category">Jewelry</p>
+                  <div class="reviews-group d-flex theme-color">
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <img loading="lazy" class="w-100 h-auto mb-3" src="assets/img/products/product-3.jpg" width="270" height="182" alt="">
-                  <div class="text-center border-top py-4">
-                    <a href="shop1.html" class="menu-link menu-link_us-s text-uppercase fw-semi-bold">Women Dress</a>
+                <h6 class="pc__title mb-2"><a href="product1_simple.html">Sphere Sterling</a></h6>
+                <div class="product-card__price d-flex">
+                  <span class="money price theme-color fw-bold font-heading">$29</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide product-card hover-overlay">
+              <div class="pc__img-wrapper border-1 pt-100per">
+                <a href="product1_simple.html">
+                  <img loading="lazy" src="assets/img/products/prod-15-1.jpg" width="330" height="330" alt="" class="pc__img">
+                </a>
+                <div class="anim_appear-center position-absolute w-100 text-center mb-3">
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-add-cart js-open-aside" data-aside="cartDrawer" title="Add To Cart">
+                    <svg class="d-inline-block" width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_cart" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-quick-view" data-bs-toggle="modal" data-bs-target="#quickView" title="Quick view">
+                    <svg class="d-inline-block" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><use href="#icon_view" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 js-add-wishlist" title="Add To Wishlist">
+                    <svg width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_heart" /></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="pc__info position-relative">
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="pc__category">Jewelry</p>
+                  <div class="reviews-group d-flex theme-color">
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <img loading="lazy" class="w-100 h-auto mb-3" src="assets/img/products/product-4.jpg" width="270" height="182" alt="">
-                  <div class="text-center border-top py-4">
-                    <a href="shop1.html" class="menu-link menu-link_us-s text-uppercase fw-semi-bold">Men Checked Shirts</a>
+                <h6 class="pc__title mb-2"><a href="product1_simple.html">Two Stone Sterling Silver</a></h6>
+                <div class="product-card__price d-flex">
+                  <span class="money price theme-color fw-bold font-heading">$29</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide product-card hover-overlay">
+              <div class="pc__img-wrapper border-1 pt-100per">
+                <a href="product1_simple.html">
+                  <img loading="lazy" src="assets/img/products/prod-17-4.jpg" width="330" height="330" alt="" class="pc__img">
+                </a>
+                <div class="anim_appear-center position-absolute w-100 text-center mb-3">
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-add-cart js-open-aside" data-aside="cartDrawer" title="Add To Cart">
+                    <svg class="d-inline-block" width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_cart" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-quick-view" data-bs-toggle="modal" data-bs-target="#quickView" title="Quick view">
+                    <svg class="d-inline-block" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><use href="#icon_view" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 js-add-wishlist" title="Add To Wishlist">
+                    <svg width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_heart" /></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="pc__info position-relative">
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="pc__category">Jewelry</p>
+                  <div class="reviews-group d-flex theme-color">
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <img loading="lazy" class="w-100 h-auto mb-3" src="assets/img/products/product-5.jpg" width="270" height="182" alt="">
-                  <div class="text-center border-top py-4">
-                    <a href="shop1.html" class="menu-link menu-link_us-s text-uppercase fw-semi-bold">Men Striped Shirts</a>
+                <h6 class="pc__title mb-2"><a href="product1_simple.html">Classic Round Cut</a></h6>
+                <div class="product-card__price d-flex">
+                  <span class="money price theme-color fw-bold font-heading">$29</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide product-card hover-overlay">
+              <div class="pc__img-wrapper border-1 pt-100per">
+                <a href="product1_simple.html">
+                  <img loading="lazy" src="assets/img/products/prod-12-4.jpg" width="330" height="330" alt="" class="pc__img">
+                </a>
+                <div class="anim_appear-center position-absolute w-100 text-center mb-3">
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-add-cart js-open-aside" data-aside="cartDrawer" title="Add To Cart">
+                    <svg class="d-inline-block" width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_cart" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-quick-view" data-bs-toggle="modal" data-bs-target="#quickView" title="Quick view">
+                    <svg class="d-inline-block" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><use href="#icon_view" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 js-add-wishlist" title="Add To Wishlist">
+                    <svg width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_heart" /></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="pc__info position-relative">
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="pc__category">Jewelry</p>
+                  <div class="reviews-group d-flex theme-color">
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <img loading="lazy" class="w-100 h-auto mb-3" src="assets/img/products/product-6.jpg" width="270" height="182" alt="">
-                  <div class="text-center border-top py-4">
-                    <a href="shop1.html" class="menu-link menu-link_us-s text-uppercase fw-semi-bold">Jeans</a>
+                <h6 class="pc__title mb-2"><a href="product1_simple.html">Sea Shell Sterling Silver</a></h6>
+                <div class="product-card__price d-flex">
+                  <span class="money price theme-color fw-bold font-heading">$29</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide product-card hover-overlay">
+              <div class="pc__img-wrapper border-1 pt-100per">
+                <a href="product1_simple.html">
+                  <img loading="lazy" src="assets/img/products/prod-11-1-1.jpg" width="330" height="330" alt="" class="pc__img">
+                </a>
+                <div class="anim_appear-center position-absolute w-100 text-center mb-3">
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-add-cart js-open-aside" data-aside="cartDrawer" title="Add To Cart">
+                    <svg class="d-inline-block" width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_cart" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-quick-view" data-bs-toggle="modal" data-bs-target="#quickView" title="Quick view">
+                    <svg class="d-inline-block" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><use href="#icon_view" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 js-add-wishlist" title="Add To Wishlist">
+                    <svg width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_heart" /></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="pc__info position-relative">
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="pc__category">Jewelry</p>
+                  <div class="reviews-group d-flex theme-color">
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
                   </div>
                 </div>
-              </div><!-- /.swiper-wrapper -->
-            </div><!-- /.swiper-container js-swiper-slider -->
-          </div><!-- /.position-relative -->
-    </div>
+                <h6 class="pc__title mb-2"><a href="product1_simple.html">Sphere Sterling</a></h6>
+                <div class="product-card__price d-flex">
+                  <span class="money price theme-color fw-bold font-heading">$29</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide product-card hover-overlay">
+              <div class="pc__img-wrapper border-1 pt-100per">
+                <a href="product1_simple.html">
+                  <img loading="lazy" src="../images/home/demo20/product-3.jpg" width="330" height="330" alt="" class="pc__img">
+                </a>
+                <div class="position-absolute left-0 top-0">
+                  <div class="product-label fs-12 text-uppercase bg-red text-white position-static py-0 mx-3 mt-3 mb-2">-67%</div>
+                  <div class="product-label fs-12 text-uppercase bg-black text-white position-static py-0 mx-3">Hot</div>
+                </div>
+                <div class="anim_appear-center position-absolute w-100 text-center mb-3">
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-add-cart js-open-aside" data-aside="cartDrawer" title="Add To Cart">
+                    <svg class="d-inline-block" width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_cart" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-quick-view" data-bs-toggle="modal" data-bs-target="#quickView" title="Quick view">
+                    <svg class="d-inline-block" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><use href="#icon_view" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 js-add-wishlist" title="Add To Wishlist">
+                    <svg width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_heart" /></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="pc__info position-relative">
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="pc__category">Jewelry</p>
+                  <div class="reviews-group d-flex theme-color">
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                  </div>
+                </div>
+                <h6 class="pc__title mb-2"><a href="product1_simple.html">Two Stone Sterling Silver</a></h6>
+                <div class="product-card__price d-flex">
+                  <span class="money price theme-color fw-bold font-heading">$29</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide product-card hover-overlay">
+              <div class="pc__img-wrapper border-1 pt-100per">
+                <a href="product1_simple.html">
+                  <img loading="lazy" src="../images/home/demo20/product-4.jpg" width="330" height="330" alt="" class="pc__img">
+                </a>
+                <div class="anim_appear-center position-absolute w-100 text-center mb-3">
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-add-cart js-open-aside" data-aside="cartDrawer" title="Add To Cart">
+                    <svg class="d-inline-block" width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_cart" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-quick-view" data-bs-toggle="modal" data-bs-target="#quickView" title="Quick view">
+                    <svg class="d-inline-block" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><use href="#icon_view" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 js-add-wishlist" title="Add To Wishlist">
+                    <svg width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_heart" /></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="pc__info position-relative">
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="pc__category">Jewelry</p>
+                  <div class="reviews-group d-flex theme-color">
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                  </div>
+                </div>
+                <h6 class="pc__title mb-2"><a href="product1_simple.html">Classic Round Cut</a></h6>
+                <div class="product-card__price d-flex">
+                  <span class="money price theme-color fw-bold font-heading">$29</span>
+                </div>
+              </div>
+            </div>
+          </div><!-- /.swiper-wrapper -->
+        </div><!-- /.swiper-container js-swiper-slider -->
+
+        <div class="products-carousel__prev position-absolute top-50 d-flex align-items-center justify-content-center">
+          <svg width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg"><use href="#icon_prev_md" /></svg>
+        </div><!-- /.products-carousel__prev -->
+        <div class="products-carousel__next position-absolute top-50 d-flex align-items-center justify-content-center">
+          <svg width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg"><use href="#icon_next_md" /></svg>
+        </div><!-- /.products-carousel__next -->
+      </div><!-- /.position-relative -->
+    </section>
     
   </section>
 
@@ -769,126 +1024,6 @@
 
   <div class="mb-4 mb-xl-5 pt-1 pb-5"></div>
 
-  <section class="products-carousel full-width_padding">
-    <h2 class="section-title text-uppercase text-center mb-1 mb-md-3 pb-xl-2 mb-xl-4">Most <strong>Popular</strong></h2>
-
-    <div class="container-fluid">
-        <div class="position-relative">
-            <div class="swiper-container js-swiper-slider"
-              data-settings='{
-                "autoplay": {
-                  "delay": 5000
-                },
-                "slidesPerView": 4,
-                "slidesPerGroup": 4,
-                "effect": "none",
-                "loop": true,
-                "pagination": {
-                  "el": ".products-pagination",
-                  "type": "bullets",
-                  "clickable": true
-                },
-                "navigation": {
-                  "nextEl": ".products-carousel__next",
-                  "prevEl": ".products-carousel__prev"
-                },
-                "breakpoints": {
-                  "320": {
-                    "slidesPerView": 2,
-                    "slidesPerGroup": 2,
-                    "spaceBetween": 14
-                  },
-                  "768": {
-                    "slidesPerView": 3,
-                    "slidesPerGroup": 3,
-                    "spaceBetween": 24
-                  },
-                  "992": {
-                    "slidesPerView": 4,
-                    "slidesPerGroup": 1,
-                    "spaceBetween": 30,
-                    "pagination": false
-                  }
-                }
-              }'>
-              <div class="swiper-wrapper">
-                <div class="swiper-slide product-card product-card_style10">
-                  <div class="position-relative pb-3">
-                    <div class="pc__img-wrapper pc__img-wrapper_wide3">
-                      <a href="product1_simple.html"><img loading="lazy" src="assets/img/products/prod-15-3.jpg" width="256" height="201" alt="Cropped Faux leather Jacket" class="pc__img"></a>
-                      <button class="pc__btn-wl position-absolute rounded-circle border-0 text-secondary js-add-wishlist bg-transparent" title="Add To Wishlist">
-                        <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_heart"></use></svg>
-                      </button>
-                    </div>
-                  </div>
-      
-                  <div class="pc__info position-relative d-flex flex-column align-items-center mb-3 mb-md-4 mb-xxl-5">
-                    <h6 class="pc__title text-uppercase fw-semi-bold"><a href="product1_simple.html">Aviator Classic</a></h6>
-                    <div class="product-card__price d-flex text-secondary mb-2">
-                      <span class="money price">$429</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide product-card product-card_style10">
-                  <div class="position-relative pb-3">
-                    <div class="pc__img-wrapper pc__img-wrapper_wide3">
-                      <a href="product1_simple.html"><img loading="lazy" src="assets/img/products/prod-1-1-500x475.jpg" width="256" height="201" alt="Cropped Faux leather Jacket" class="pc__img"></a>
-                      <button class="pc__btn-wl position-absolute rounded-circle border-0 text-secondary js-add-wishlist bg-transparent" title="Add To Wishlist">
-                        <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_heart"></use></svg>
-                      </button>
-                    </div>
-                  </div>
-      
-                  <div class="pc__info position-relative d-flex flex-column align-items-center mb-3 mb-md-4 mb-xxl-5">
-                    <h6 class="pc__title text-uppercase fw-semi-bold"><a href="product1_simple.html">New Wayfarer Classic</a></h6>
-                    <div class="product-card__price d-flex text-secondary mb-2">
-                      <span class="money price">$429</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide product-card product-card_style10">
-                  <div class="position-relative pb-3">
-                    <div class="pc__img-wrapper pc__img-wrapper_wide3">
-                      <a href="product1_simple.html"><img loading="lazy" src="assets/img/products/prod-1-1-500x475.jpg" width="256" height="201" alt="Cropped Faux leather Jacket" class="pc__img"></a>
-                      <button class="pc__btn-wl position-absolute rounded-circle border-0 text-secondary js-add-wishlist bg-transparent" title="Add To Wishlist">
-                        <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_heart"></use></svg>
-                      </button>
-                    </div>
-                  </div>
-      
-                  <div class="pc__info position-relative d-flex flex-column align-items-center mb-3 mb-md-4 mb-xxl-5">
-                    <h6 class="pc__title text-uppercase fw-semi-bold"><a href="product1_simple.html">New Wayfarer Classic</a></h6>
-                    <div class="product-card__price d-flex text-secondary mb-2">
-                      <span class="money price">$429</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide product-card product-card_style10">
-                  <div class="position-relative pb-3">
-                    <div class="pc__img-wrapper pc__img-wrapper_wide3">
-                      <a href="product1_simple.html"><img loading="lazy" src="assets/img/products/prod-1-1-500x475.jpg" width="256" height="201" alt="Cropped Faux leather Jacket" class="pc__img"></a>
-                      <button class="pc__btn-wl position-absolute rounded-circle border-0 text-secondary js-add-wishlist bg-transparent" title="Add To Wishlist">
-                        <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_heart"></use></svg>
-                      </button>
-                    </div>
-                  </div>
-      
-                  <div class="pc__info position-relative d-flex flex-column align-items-center mb-3 mb-md-4 mb-xxl-5">
-                    <h6 class="pc__title text-uppercase fw-semi-bold"><a href="product1_simple.html">New Wayfarer Classic</a></h6>
-                    <div class="product-card__price d-flex text-secondary mb-2">
-                      <span class="money price">$429</span>
-                    </div>
-                  </div>
-                </div>
-              </div><!-- /.swiper-wrapper -->
-            </div><!-- /.swiper-container js-swiper-slider -->
-          </div><!-- /.position-relative -->
-          <div class="text-center mt-2">
-            <a class="btn-link btn-link_lg default-underline text-uppercase fw-medium" href="shop1.html">See All Products</a>
-          </div>
-    </div>
-    
-  </section>
 
   <div class="mb-4 mb-xl-5 pt-1 pb-5"></div>
 
@@ -1015,6 +1150,732 @@
           </div>
     </div>
     
+  </section>
+
+  <div class="mb-4 mb-xl-5 pt-1 pb-5"></div>
+
+  <section class="products-grid container">
+    <h2 class="section-title text-uppercase text-center mb-1 mb-md-3 pb-xl-2 mb-xl-4">Latest Products</h2>
+
+    <ul class="nav nav-tabs mb-3 text-uppercase justify-content-center" id="collections-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link nav-link_underscore active" id="collections-tab-1-trigger" data-bs-toggle="tab" href="#collections-tab-1" role="tab" aria-controls="collections-tab-1" aria-selected="true">All</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link nav-link_underscore" id="collections-tab-2-trigger" data-bs-toggle="tab" href="#collections-tab-2" role="tab" aria-controls="collections-tab-2" aria-selected="true">Men</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link nav-link_underscore" id="collections-tab-3-trigger" data-bs-toggle="tab" href="#collections-tab-3" role="tab" aria-controls="collections-tab-3" aria-selected="true">Women</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link nav-link_underscore" id="collections-tab-4-trigger" data-bs-toggle="tab" href="#collections-tab-4" role="tab" aria-controls="collections-tab-4" aria-selected="true">Kids</a>
+      </li>
+    </ul>
+
+    <div class="tab-content pt-2" id="collections-tab-content">
+      <div class="tab-pane fade show active" id="collections-tab-2" role="tabpanel" aria-labelledby="collections-tab-1-trigger">
+        <div class="row">
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card mb-3 mb-md-4 mb-xxl-5">
+
+              <div class="pc__img-wrapper border-1 pt-100per">
+                <a href="product1_simple.html">
+                  <img loading="lazy" src="assets/img/products/prod-7-1.jpg" width="330" height="330" alt="" class="pc__img">
+                </a>
+                <div class="anim_appear-center position-absolute w-100 text-center mb-3">
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-add-cart js-open-aside" data-aside="cartDrawer" title="Add To Cart">
+                    <svg class="d-inline-block" width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_cart" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-quick-view" data-bs-toggle="modal" data-bs-target="#quickView" title="Quick view">
+                    <svg class="d-inline-block" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><use href="#icon_view" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 js-add-wishlist" title="Add To Wishlist">
+                    <svg width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_heart" /></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="pc__info position-relative">
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="pc__category">Jewelry</p>
+                  <div class="reviews-group d-flex theme-color">
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                  </div>
+                </div>
+                <h6 class="pc__title mb-2"><a href="product1_simple.html">Sea Shell Sterling Silver</a></h6>
+                <div class="product-card__price d-flex">
+                  <span class="money price theme-color fw-bold font-heading">$29</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card mb-3 mb-md-4 mb-xxl-5">
+
+              <div class="pc__img-wrapper border-1 pt-100per">
+                <a href="product1_simple.html">
+                  <img loading="lazy" src="assets/img/products/prod-11-1.jpg" width="330" height="330" alt="" class="pc__img">
+                </a>
+                <div class="anim_appear-center position-absolute w-100 text-center mb-3">
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-add-cart js-open-aside" data-aside="cartDrawer" title="Add To Cart">
+                    <svg class="d-inline-block" width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_cart" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-quick-view" data-bs-toggle="modal" data-bs-target="#quickView" title="Quick view">
+                    <svg class="d-inline-block" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><use href="#icon_view" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 js-add-wishlist" title="Add To Wishlist">
+                    <svg width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_heart" /></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="pc__info position-relative">
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="pc__category">Jewelry</p>
+                  <div class="reviews-group d-flex theme-color">
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                  </div>
+                </div>
+                <h6 class="pc__title mb-2"><a href="product1_simple.html">Sea Shell Sterling Silver</a></h6>
+                <div class="product-card__price d-flex">
+                  <span class="money price theme-color fw-bold font-heading">$29</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card mb-3 mb-md-4 mb-xxl-5">
+
+              <div class="pc__img-wrapper border-1 pt-100per">
+                <a href="product1_simple.html">
+                  <img loading="lazy" src="assets/img/products/prod-10-1.jpg" width="330" height="330" alt="" class="pc__img">
+                </a>
+                <div class="anim_appear-center position-absolute w-100 text-center mb-3">
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-add-cart js-open-aside" data-aside="cartDrawer" title="Add To Cart">
+                    <svg class="d-inline-block" width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_cart" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-quick-view" data-bs-toggle="modal" data-bs-target="#quickView" title="Quick view">
+                    <svg class="d-inline-block" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><use href="#icon_view" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 js-add-wishlist" title="Add To Wishlist">
+                    <svg width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_heart" /></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="pc__info position-relative">
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="pc__category">Jewelry</p>
+                  <div class="reviews-group d-flex theme-color">
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                  </div>
+                </div>
+                <h6 class="pc__title mb-2"><a href="product1_simple.html">Sea Shell Sterling Silver</a></h6>
+                <div class="product-card__price d-flex">
+                  <span class="money price theme-color fw-bold font-heading">$29</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card mb-3 mb-md-4 mb-xxl-5">
+
+              <div class="pc__img-wrapper border-1 pt-100per">
+                <a href="product1_simple.html">
+                  <img loading="lazy" src="assets/img/products/prod-7-1.jpg" width="330" height="330" alt="" class="pc__img">
+                </a>
+                <div class="anim_appear-center position-absolute w-100 text-center mb-3">
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-add-cart js-open-aside" data-aside="cartDrawer" title="Add To Cart">
+                    <svg class="d-inline-block" width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_cart" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-quick-view" data-bs-toggle="modal" data-bs-target="#quickView" title="Quick view">
+                    <svg class="d-inline-block" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><use href="#icon_view" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 js-add-wishlist" title="Add To Wishlist">
+                    <svg width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_heart" /></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="pc__info position-relative">
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="pc__category">Jewelry</p>
+                  <div class="reviews-group d-flex theme-color">
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                  </div>
+                </div>
+                <h6 class="pc__title mb-2"><a href="product1_simple.html">Sea Shell Sterling Silver</a></h6>
+                <div class="product-card__price d-flex">
+                  <span class="money price theme-color fw-bold font-heading">$29</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /.row -->
+        <div class="text-center mt-2">
+          <a class="btn-link btn-link_lg default-underline text-uppercase fw-medium" href="shop1.html">Discover More</a>
+        </div>
+      </div><!-- /.tab-pane fade show-->
+
+      <div class="tab-pane fade show" id="collections-tab-3" role="tabpanel" aria-labelledby="collections-tab-2-trigger">
+        <div class="row">
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card mb-3 mb-md-4 mb-xxl-5">
+
+              <div class="pc__img-wrapper border-1 pt-100per">
+                <a href="product1_simple.html">
+                  <img loading="lazy" src="assets/img/products/prod-11-1.jpg" width="330" height="330" alt="" class="pc__img">
+                </a>
+                <div class="anim_appear-center position-absolute w-100 text-center mb-3">
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-add-cart js-open-aside" data-aside="cartDrawer" title="Add To Cart">
+                    <svg class="d-inline-block" width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_cart" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-quick-view" data-bs-toggle="modal" data-bs-target="#quickView" title="Quick view">
+                    <svg class="d-inline-block" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><use href="#icon_view" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 js-add-wishlist" title="Add To Wishlist">
+                    <svg width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_heart" /></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="pc__info position-relative">
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="pc__category">Jewelry</p>
+                  <div class="reviews-group d-flex theme-color">
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                  </div>
+                </div>
+                <h6 class="pc__title mb-2"><a href="product1_simple.html">Sea Shell Sterling Silver</a></h6>
+                <div class="product-card__price d-flex">
+                  <span class="money price theme-color fw-bold font-heading">$29</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card mb-3 mb-md-4 mb-xxl-5">
+
+              <div class="pc__img-wrapper border-1 pt-100per">
+                <a href="product1_simple.html">
+                  <img loading="lazy" src="assets/img/products/prod-2-1.jpg" width="330" height="330" alt="" class="pc__img">
+                </a>
+                <div class="anim_appear-center position-absolute w-100 text-center mb-3">
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-add-cart js-open-aside" data-aside="cartDrawer" title="Add To Cart">
+                    <svg class="d-inline-block" width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_cart" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-quick-view" data-bs-toggle="modal" data-bs-target="#quickView" title="Quick view">
+                    <svg class="d-inline-block" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><use href="#icon_view" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 js-add-wishlist" title="Add To Wishlist">
+                    <svg width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_heart" /></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="pc__info position-relative">
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="pc__category">Jewelry</p>
+                  <div class="reviews-group d-flex theme-color">
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                  </div>
+                </div>
+                <h6 class="pc__title mb-2"><a href="product1_simple.html">Sea Shell Sterling Silver</a></h6>
+                <div class="product-card__price d-flex">
+                  <span class="money price theme-color fw-bold font-heading">$29</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card mb-3 mb-md-4 mb-xxl-5">
+
+              <div class="pc__img-wrapper border-1 pt-100per">
+                <a href="product1_simple.html">
+                  <img loading="lazy" src="assets/img/products/prod-10-1.jpg" width="330" height="330" alt="" class="pc__img">
+                </a>
+                <div class="anim_appear-center position-absolute w-100 text-center mb-3">
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-add-cart js-open-aside" data-aside="cartDrawer" title="Add To Cart">
+                    <svg class="d-inline-block" width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_cart" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-quick-view" data-bs-toggle="modal" data-bs-target="#quickView" title="Quick view">
+                    <svg class="d-inline-block" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><use href="#icon_view" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 js-add-wishlist" title="Add To Wishlist">
+                    <svg width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_heart" /></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="pc__info position-relative">
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="pc__category">Jewelry</p>
+                  <div class="reviews-group d-flex theme-color">
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                  </div>
+                </div>
+                <h6 class="pc__title mb-2"><a href="product1_simple.html">Sea Shell Sterling Silver</a></h6>
+                <div class="product-card__price d-flex">
+                  <span class="money price theme-color fw-bold font-heading">$29</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card mb-3 mb-md-4 mb-xxl-5">
+
+              <div class="pc__img-wrapper border-1 pt-100per">
+                <a href="product1_simple.html">
+                  <img loading="lazy" src="assets/img/products/prod-7-1.jpg" width="330" height="330" alt="" class="pc__img">
+                </a>
+                <div class="anim_appear-center position-absolute w-100 text-center mb-3">
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-add-cart js-open-aside" data-aside="cartDrawer" title="Add To Cart">
+                    <svg class="d-inline-block" width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_cart" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-quick-view" data-bs-toggle="modal" data-bs-target="#quickView" title="Quick view">
+                    <svg class="d-inline-block" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><use href="#icon_view" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 js-add-wishlist" title="Add To Wishlist">
+                    <svg width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_heart" /></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="pc__info position-relative">
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="pc__category">Jewelry</p>
+                  <div class="reviews-group d-flex theme-color">
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                  </div>
+                </div>
+                <h6 class="pc__title mb-2"><a href="product1_simple.html">Sea Shell Sterling Silver</a></h6>
+                <div class="product-card__price d-flex">
+                  <span class="money price theme-color fw-bold font-heading">$29</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /.row -->
+        <div class="text-center mt-2">
+          <a class="btn-link btn-link_lg default-underline text-uppercase fw-medium" href="shop1.html">Discover More</a>
+        </div>
+      </div><!-- /.tab-pane fade show-->
+
+      <div class="tab-pane fade show" id="collections-tab-4" role="tabpanel" aria-labelledby="collections-tab-3-trigger">
+        <div class="row">
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card mb-3 mb-md-4 mb-xxl-5">
+
+              <div class="pc__img-wrapper border-1 pt-100per">
+                <a href="product1_simple.html">
+                  <img loading="lazy" src="assets/img/products/prod-7-1.jpg" width="330" height="330" alt="" class="pc__img">
+                </a>
+                <div class="anim_appear-center position-absolute w-100 text-center mb-3">
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-add-cart js-open-aside" data-aside="cartDrawer" title="Add To Cart">
+                    <svg class="d-inline-block" width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_cart" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-quick-view" data-bs-toggle="modal" data-bs-target="#quickView" title="Quick view">
+                    <svg class="d-inline-block" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><use href="#icon_view" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 js-add-wishlist" title="Add To Wishlist">
+                    <svg width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_heart" /></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="pc__info position-relative">
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="pc__category">Jewelry</p>
+                  <div class="reviews-group d-flex theme-color">
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                  </div>
+                </div>
+                <h6 class="pc__title mb-2"><a href="product1_simple.html">Sea Shell Sterling Silver</a></h6>
+                <div class="product-card__price d-flex">
+                  <span class="money price theme-color fw-bold font-heading">$29</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card mb-3 mb-md-4 mb-xxl-5">
+
+              <div class="pc__img-wrapper border-1 pt-100per">
+                <a href="product1_simple.html">
+                  <img loading="lazy" src="assets/img/products/prod-2-1.jpg" width="330" height="330" alt="" class="pc__img">
+                </a>
+                <div class="anim_appear-center position-absolute w-100 text-center mb-3">
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-add-cart js-open-aside" data-aside="cartDrawer" title="Add To Cart">
+                    <svg class="d-inline-block" width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_cart" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-quick-view" data-bs-toggle="modal" data-bs-target="#quickView" title="Quick view">
+                    <svg class="d-inline-block" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><use href="#icon_view" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 js-add-wishlist" title="Add To Wishlist">
+                    <svg width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_heart" /></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="pc__info position-relative">
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="pc__category">Jewelry</p>
+                  <div class="reviews-group d-flex theme-color">
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                  </div>
+                </div>
+                <h6 class="pc__title mb-2"><a href="product1_simple.html">Sea Shell Sterling Silver</a></h6>
+                <div class="product-card__price d-flex">
+                  <span class="money price theme-color fw-bold font-heading">$29</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card mb-3 mb-md-4 mb-xxl-5">
+
+              <div class="pc__img-wrapper border-1 pt-100per">
+                <a href="product1_simple.html">
+                  <img loading="lazy" src="assets/img/products/prod-10-1.jpg" width="330" height="330" alt="" class="pc__img">
+                </a>
+                <div class="anim_appear-center position-absolute w-100 text-center mb-3">
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-add-cart js-open-aside" data-aside="cartDrawer" title="Add To Cart">
+                    <svg class="d-inline-block" width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_cart" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-quick-view" data-bs-toggle="modal" data-bs-target="#quickView" title="Quick view">
+                    <svg class="d-inline-block" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><use href="#icon_view" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 js-add-wishlist" title="Add To Wishlist">
+                    <svg width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_heart" /></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="pc__info position-relative">
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="pc__category">Jewelry</p>
+                  <div class="reviews-group d-flex theme-color">
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                  </div>
+                </div>
+                <h6 class="pc__title mb-2"><a href="product1_simple.html">Sea Shell Sterling Silver</a></h6>
+                <div class="product-card__price d-flex">
+                  <span class="money price theme-color fw-bold font-heading">$29</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card mb-3 mb-md-4 mb-xxl-5">
+
+              <div class="pc__img-wrapper border-1 pt-100per">
+                <a href="product1_simple.html">
+                  <img loading="lazy" src="assets/img/products/prod-11-1.jpg" width="330" height="330" alt="" class="pc__img">
+                </a>
+                <div class="anim_appear-center position-absolute w-100 text-center mb-3">
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-add-cart js-open-aside" data-aside="cartDrawer" title="Add To Cart">
+                    <svg class="d-inline-block" width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_cart" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 me-1 me-md-2 js-quick-view" data-bs-toggle="modal" data-bs-target="#quickView" title="Quick view">
+                    <svg class="d-inline-block" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><use href="#icon_view" /></svg>
+                  </button>
+                  <button class="btn btn-round bg-black text-white theme-hover-bg border-0 border-radius-0 d-inline-flex align-items-center justify-content-center text-uppercase py-1 js-add-wishlist" title="Add To Wishlist">
+                    <svg width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_heart" /></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="pc__info position-relative">
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="pc__category">Jewelry</p>
+                  <div class="reviews-group d-flex theme-color">
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg" style="fill: currentColor"><use href="#icon_star" /></svg>
+                  </div>
+                </div>
+                <h6 class="pc__title mb-2"><a href="product1_simple.html">Sea Shell Sterling Silver</a></h6>
+                <div class="product-card__price d-flex">
+                  <span class="money price theme-color fw-bold font-heading">$29</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /.row -->
+        <div class="text-center mt-2">
+          <a class="btn-link btn-link_lg default-underline text-uppercase fw-medium" href="shop1.html">Discover More</a>
+        </div>
+      </div><!-- /.tab-pane fade show-->
+
+      <div class="tab-pane fade show" id="collections-tab-4" role="tabpanel" aria-labelledby="collections-tab-4-trigger">
+        <div class="row">
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card mb-3 mb-md-4 mb-xxl-5">
+              <div class="pc__img-wrapper">
+                <a href="product1_simple.html">
+                  <img loading="lazy" src="../images/products/product_7.jpg" width="330" height="400" alt="Cropped Faux leather Jacket" class="pc__img">
+                  <img loading="lazy" src="../images/products/product_7-1.jpg" width="330" height="400" alt="Cropped Faux leather Jacket" class="pc__img pc__img-second">
+                </a>
+                <button class="pc__atc btn anim_appear-bottom btn position-absolute border-0 text-uppercase fw-medium js-add-cart js-open-aside" data-aside="cartDrawer" title="Add To Cart">Add To Cart</button>
+              </div>
+
+              <div class="pc__info position-relative">
+                <p class="pc__category">Dresses</p>
+                <h6 class="pc__title"><a href="product1_simple.html">Cotton Jersey T-Shirt</a></h6>
+                <div class="product-card__price d-flex">
+                  <span class="money price">$17</span>
+                </div>
+
+                <button class="pc__btn-wl position-absolute top-0 end-0 bg-transparent border-0 js-add-wishlist" title="Add To Wishlist">
+                  <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_heart" /></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card mb-3 mb-md-4 mb-xxl-5">
+              <div class="pc__img-wrapper">
+                <a href="product1_simple.html">
+                  <img loading="lazy" src="../images/products/product_8.jpg" width="330" height="400" alt="Cropped Faux leather Jacket" class="pc__img">
+                  <img loading="lazy" src="../images/products/product_8-1.jpg" width="330" height="400" alt="Cropped Faux leather Jacket" class="pc__img pc__img-second">
+                </a>
+                <button class="pc__atc btn anim_appear-bottom btn position-absolute border-0 text-uppercase fw-medium js-add-cart js-open-aside" data-aside="cartDrawer" title="Add To Cart">Add To Cart</button>
+              </div>
+
+              <div class="pc__info position-relative">
+                <p class="pc__category">Dresses</p>
+                <h6 class="pc__title"><a href="product1_simple.html">Zessi Dresses</a></h6>
+                <div class="product-card__price d-flex">
+                  <span class="money price price-old">$129</span>
+                  <span class="money price price-sale">$99</span>
+                </div>
+
+                <button class="pc__btn-wl position-absolute top-0 end-0 bg-transparent border-0 js-add-wishlist" title="Add To Wishlist">
+                  <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_heart" /></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card mb-3 mb-md-4 mb-xxl-5">
+              <div class="pc__img-wrapper">
+                <a href="product1_simple.html">
+                  <img loading="lazy" src="../images/products/product_1.jpg" width="330" height="400" alt="Cropped Faux leather Jacket" class="pc__img">
+                  <img loading="lazy" src="../images/products/product_1-1.jpg" width="330" height="400" alt="Cropped Faux leather Jacket" class="pc__img pc__img-second">
+                </a>
+                <button class="pc__atc btn anim_appear-bottom btn position-absolute border-0 text-uppercase fw-medium js-add-cart js-open-aside" data-aside="cartDrawer" title="Add To Cart">Add To Cart</button>
+              </div>
+
+              <div class="pc__info position-relative">
+                <p class="pc__category">Dresses</p>
+                <h6 class="pc__title"><a href="product1_simple.html">Cropped Faux Leather Jacket</a></h6>
+                <div class="product-card__price d-flex">
+                  <span class="money price">$29</span>
+                </div>
+                <div class="product-card__review d-flex align-items-center">
+                  <div class="reviews-group d-flex">
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg"><use href="#icon_star" /></svg>
+                    <svg class="review-star" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg"><use href="#icon_star" /></svg>
+                  </div>
+                  <span class="reviews-note text-lowercase text-secondary ms-1">8k+ reviews</span>
+                </div>
+
+                <button class="pc__btn-wl position-absolute top-0 end-0 bg-transparent border-0 js-add-wishlist" title="Add To Wishlist">
+                  <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_heart" /></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card mb-3 mb-md-4 mb-xxl-5">
+              <div class="pc__img-wrapper">
+                <a href="product1_simple.html">
+                  <img loading="lazy" src="../images/products/product_2.jpg" width="330" height="400" alt="Cropped Faux leather Jacket" class="pc__img">
+                  <img loading="lazy" src="../images/products/product_2-1.jpg" width="330" height="400" alt="Cropped Faux leather Jacket" class="pc__img pc__img-second">
+                </a>
+                <button class="pc__atc btn anim_appear-bottom btn position-absolute border-0 text-uppercase fw-medium js-add-cart js-open-aside" data-aside="cartDrawer" title="Add To Cart">Add To Cart</button>
+              </div>
+
+              <div class="pc__info position-relative">
+                <p class="pc__category">Dresses</p>
+                <h6 class="pc__title"><a href="product1_simple.html">Calvin Shorts</a></h6>
+                <div class="product-card__price d-flex">
+                  <span class="money price">$62</span>
+                </div>
+
+                <button class="pc__btn-wl position-absolute top-0 end-0 bg-transparent border-0 js-add-wishlist" title="Add To Wishlist">
+                  <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_heart" /></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card mb-3 mb-md-4 mb-xxl-5">
+              <div class="pc__img-wrapper">
+                <a href="product1_simple.html">
+                  <img loading="lazy" src="../images/products/product_3.jpg" width="330" height="400" alt="Cropped Faux leather Jacket" class="pc__img">
+                  <img loading="lazy" src="../images/products/product_3-1.jpg" width="330" height="400" alt="Cropped Faux leather Jacket" class="pc__img pc__img-second">
+                </a>
+                <button class="pc__atc btn anim_appear-bottom btn position-absolute border-0 text-uppercase fw-medium js-add-cart js-open-aside" data-aside="cartDrawer" title="Add To Cart">Add To Cart</button>
+              </div>
+
+              <div class="pc__info position-relative">
+                <p class="pc__category">Dresses</p>
+                <h6 class="pc__title"><a href="product1_simple.html">Kirby T-Shirt</a></h6>
+                <div class="product-card__price d-flex">
+                  <span class="money price">$17</span>
+                </div>
+
+                <button class="pc__btn-wl position-absolute top-0 end-0 bg-transparent border-0 js-add-wishlist" title="Add To Wishlist">
+                  <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_heart" /></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card mb-3 mb-md-4 mb-xxl-5">
+              <div class="pc__img-wrapper">
+                <a href="product1_simple.html">
+                  <img loading="lazy" src="../images/products/product_4.jpg" width="330" height="400" alt="Cropped Faux leather Jacket" class="pc__img">
+                  <img loading="lazy" src="../images/products/product_4-1.jpg" width="330" height="400" alt="Cropped Faux leather Jacket" class="pc__img pc__img-second">
+                </a>
+                <button class="pc__atc btn anim_appear-bottom btn position-absolute border-0 text-uppercase fw-medium js-add-cart js-open-aside" data-aside="cartDrawer" title="Add To Cart">Add To Cart</button>
+              </div>
+
+              <div class="pc__info position-relative">
+                <p class="pc__category">Dresses</p>
+                <h6 class="pc__title"><a href="product1_simple.html">Cableknit Shawl</a></h6>
+                <div class="product-card__price d-flex">
+                  <span class="money price price-old">$129</span>
+                  <span class="money price price-sale">$99</span>
+                </div>
+
+                <button class="pc__btn-wl position-absolute top-0 end-0 bg-transparent border-0 js-add-wishlist" title="Add To Wishlist">
+                  <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_heart" /></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card mb-3 mb-md-4 mb-xxl-5">
+              <div class="pc__img-wrapper">
+                <a href="product1_simple.html">
+                  <img loading="lazy" src="../images/products/product_5.jpg" width="330" height="400" alt="Cropped Faux leather Jacket" class="pc__img">
+                  <img loading="lazy" src="../images/products/product_5-1.jpg" width="330" height="400" alt="Cropped Faux leather Jacket" class="pc__img pc__img-second">
+                </a>
+                <button class="pc__atc btn anim_appear-bottom btn position-absolute border-0 text-uppercase fw-medium js-add-cart js-open-aside" data-aside="cartDrawer" title="Add To Cart">Add To Cart</button>
+              </div>
+
+              <div class="pc__info position-relative">
+                <p class="pc__category">Dresses</p>
+                <h6 class="pc__title"><a href="product1_simple.html">Colorful Jacket</a></h6>
+                <div class="product-card__price d-flex">
+                  <span class="money price">$29</span>
+                </div>
+
+                <button class="pc__btn-wl position-absolute top-0 end-0 bg-transparent border-0 js-add-wishlist" title="Add To Wishlist">
+                  <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_heart" /></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="product-card mb-3 mb-md-4 mb-xxl-5">
+              <div class="pc__img-wrapper">
+                <a href="product1_simple.html">
+                  <img loading="lazy" src="../images/products/product_6.jpg" width="330" height="400" alt="Cropped Faux leather Jacket" class="pc__img">
+                  <img loading="lazy" src="../images/products/product_6-1.jpg" width="330" height="400" alt="Cropped Faux leather Jacket" class="pc__img pc__img-second">
+                </a>
+                <button class="pc__atc btn anim_appear-bottom btn position-absolute border-0 text-uppercase fw-medium js-add-cart js-open-aside" data-aside="cartDrawer" title="Add To Cart">Add To Cart</button>
+              </div>
+
+              <div class="pc__info position-relative">
+                <p class="pc__category">Dresses</p>
+                <h6 class="pc__title"><a href="product1_simple.html">Shirt In Botanical Cheetah Print</a></h6>
+                <div class="product-card__price d-flex">
+                  <span class="money price">$62</span>
+                </div>
+
+                <button class="pc__btn-wl position-absolute top-0 end-0 bg-transparent border-0 js-add-wishlist" title="Add To Wishlist">
+                  <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_heart" /></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.row -->
+        <div class="text-center mt-2">
+          <a class="btn-link btn-link_lg default-underline text-uppercase fw-medium" href="shop1.html">See All Products</a>
+        </div>
+      </div><!-- /.tab-pane fade show-->
+    </div><!-- /.tab-content pt-2 -->
   </section>
 
   <div class="mb-4 mb-xl-5 pt-1 pb-5"></div>
