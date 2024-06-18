@@ -1163,8 +1163,6 @@ function pureFadeOut(e) {
     }
 
     initCookieConsient() {
-      // const purecookieDesc = "In order to provide you a personalized shopping experience, our site uses cookies. By continuing to use this site, you are agreeing to our cookie policy.",
-      // purecookieButton = "Accept";
 
       function pureFadeIn(e, o) {
         var i = document.getElementById(e);
@@ -1175,26 +1173,25 @@ function pureFadeOut(e) {
         }()
       }
 
-      function getCookie(e) {
-        for (var o = e + "=", i = document.cookie.split(";"), t = 0; t < i.length; t++) {
-          for (var n = i[t];" " == n.charAt(0);) {
-            n = n.substring(1, n.length);
-          }
-          if (0 == n.indexOf(o))
-            return n.substring(o.length, n.length)
-        }
-        return null
-      }
+      // function getCookie(e) {
+      //   for (var o = e + "=", i = document.cookie.split(";"), t = 0; t < i.length; t++) {
+      //     for (var n = i[t];" " == n.charAt(0);) {
+      //       n = n.substring(1, n.length);
+      //     }
+      //     if (0 == n.indexOf(o))
+      //       return n.substring(o.length, n.length)
+      //   }
+      //   return null
+      // }
 
-      function appendHtml(el, str) {
-        var div = document.createElement('div');
-        div.innerHTML = str;
-        while (div.children.length > 0) {
-          el.appendChild(div.children[0]);
-        }
-      }
+      // function appendHtml(el, str) {
+      //   var div = document.createElement('div');
+      //   div.innerHTML = str;
+      //   while (div.children.length > 0) {
+      //     el.appendChild(div.children[0]);
+      //   }
+      // }
 
-      getCookie("purecookieDismiss") || (appendHtml(document.body, '<div class="cookieConsentContainer" id="cookieConsentContainer"><div class="cookieDesc"><p>' + purecookieDesc + '</p></div><div class="cookieButton"><a onClick="purecookieDismiss();">' + purecookieButton + "</a></div></div>"), pureFadeIn("cookieConsentContainer"))
     }
 
     initAccessories() {
