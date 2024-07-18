@@ -893,11 +893,11 @@
 	*Initialization 
 	***********************/
 
-	$(window).on('load', function(){
-		$('.ai-preloader').removeClass("active");
-		productMasonryActivation();
-		blogMasonryActivation();
-	});
+	// $(window).on('load', function(){
+	// 	$('.ai-preloader').removeClass("active");
+	// 	productMasonryActivation();
+	// 	blogMasonryActivation();
+	// });
 
 	$(document).ready(function(){
 		elementCarousel();
